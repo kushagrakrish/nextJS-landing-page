@@ -11,7 +11,10 @@ const Navbar = () => {
         <div>
           <ul className='flex items-center justify-between'>
             {items?.map((item, i) => (
-              <li className='text-lg text-gray-100 font-medium px-7 cursor-pointer hover:text-gray-600 hover:ease-in-out hover:duration-300'>
+              <li
+                key={item.i}
+                className='text-lg text-gray-100 font-medium px-7 cursor-pointer hover:text-gray-600 hover:ease-in-out hover:duration-300'
+              >
                 {item}
               </li>
             ))}

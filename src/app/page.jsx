@@ -1,9 +1,10 @@
+import Hero from "@/components/Hero";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div>
-      <h1 className='text-9xl'>Hello World</h1>
+      <Hero />
     </div>
   );
 }

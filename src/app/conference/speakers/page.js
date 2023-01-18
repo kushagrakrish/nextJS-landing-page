@@ -27,9 +27,9 @@ const page = async () => {
           className='flex items-center justify-evenly py-4 bg-gray-200'
           key={i}
         >
-          <Link href={`/conference/speakers/${item.name}`}>
-            <h2 className='text-2xl font-semibold '>Name: {item.name}</h2>
-          </Link>
+          {/* <Link href={`/conference/speakers/${item.name}`}> */}
+          <h2 className='text-2xl font-semibold '>Name: {item.name}</h2>
+          {/* </Link> */}
           <h3 className='text-xl font-semibold cursor-pointer text-green-600 '>
             E-mail: {item.email}
           </h3>

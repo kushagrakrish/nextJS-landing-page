@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
             <Link href='/home'>Globamantics</Link>
           </h1>
           {items?.map((item, i) => (
-            <h2 className='text-xl font-medium text-white '>
+            <h2 key={i} className='text-xl font-medium text-white '>
               <Link href={item.path}>{item.name}</Link>
             </h2>
           ))}
